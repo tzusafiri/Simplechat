@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Default settings"
+        android:key="default_settings"
+        >
+
+        <EditTextPreference
+            android:key="signature"
+            android:title="Your signature"/>
+
+        <SwitchPreference
+            android:title="Delivery reports"
+            android:defaultValue="false"
+            android:key="delivery_report"
+            android:summary="check to receive notification if message delivered"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Resets Keys" android:key="resets_keys">
+
+        <ListPreference
+            android:summary="reset your private or/and public key if forgotten"
+            android:key="key_preference"
+            android:title="Reset public and private keys"
+            android:entries="@array/user_key"
+            android:entryValues="@array/user_key_value"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Others" android:key="other_setting">
+
+        <Preference
+            android:title="Send feedback"
+            android:key="send_feedback"
+            android:summary="Send us your feedback for any problem or suggestion about our application"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.simplechat"
+                android:targetClass="com.example.simplechat.comment"
+                />
+        </Preference>
+
+        <Preference
+            android:title="About us"
+            android:key="about_us"
+            android:summary="We explain how our application and membes participated in  the project"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.simplechat"
+                android:targetClass="com.example.simplechat.aboutus"
+                />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

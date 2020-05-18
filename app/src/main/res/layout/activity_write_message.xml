@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".write_message">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/round_shape"
+        android:layout_alignParentTop="true"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="To:"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkblack"
+            android:paddingLeft="15dp"
+            android:background="@drawable/triangle_shape"
+            android:layout_toLeftOf="@id/add_contact"
+            android:layout_centerVertical="true">
+
+        </AutoCompleteTextView>
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/add_contact"
+            android:clickable="true"
+            android:background="@drawable/ic_person_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:background="@drawable/bottomshape"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/write_sms"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName|textMultiLine"
+            android:paddingLeft="15dp"
+            android:ems="10"
+            android:maxLength="2000"
+            android:maxLines="8"
+            android:textColor="@color/black"
+            android:background="@drawable/triangle_shape"
+            android:hint="Type a message"
+            android:textColorHint="@color/darkblack"
+            android:layout_toLeftOf="@id/send_button"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="sendbtn"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_send_black_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Simplechat</string>
+    <string name="todo">TODO</string>
+    <string name="submit">Submit</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sms_encryption_application">sms encryption application</string>
+    <string name="team_members">TEAM MEMBERS</string>
+
+    <string-array name="user_key">
+        <item>public key</item>
+        <item>private key</item>
+    </string-array>
+
+    <string-array name="user_key_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

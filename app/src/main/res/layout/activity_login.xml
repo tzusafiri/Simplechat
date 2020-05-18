@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="167dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_forum_black_24dp" />
+
+    <EditText
+        android:id="@+id/set_password"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/triangle_shape"
+        android:hint="Enter password"
+        android:textColorHint="@color/darkblack"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/confirm_pass"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="294dp"
+        android:background="@drawable/triangle_shape"
+        android:hint="Confirm password"
+        android:textColorHint="@color/darkblack"
+        android:padding="12dp"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/set_btn"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginLeft="186dp"
+        android:layout_marginBottom="233dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/triangle_shape"
+        android:text="Submit"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginBottom="-5dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:paddingLeft="60dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/sms_encryption_application"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
